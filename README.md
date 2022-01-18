@@ -11,6 +11,12 @@
 
 ### `npm run build`
 
+# NOTE:
+#### you need to use your own `edamam api` in case you use this app...
+#### find more: [Edamam Food Recipe API](https://developer.edamam.com/edamam-recipe-api)
+#### this api is free also If you are stupid you can text me!
+
+
 # Screen Shots:
 #### Initial:
 ![Intial](/public/appss0.png)
