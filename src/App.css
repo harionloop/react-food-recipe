@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: palevioletred;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.app_form_input {
+    padding: 7px 10px;
+    margin-top: 50px;
+    margin-right: 20px;
+    background-color: pink;
+    color: rgb(1, 1, 15);
+    font-weight: 500;
+    font-style: italic;
+    border-radius: 10px;
+    border: none;
+}
+
+.app_form_search {
+    border-radius: 5px;
+    background-color: pink;
+    border: none;
+    padding: 7px 13px;
+    transition: 300ms;
+    font-weight: 500;
+}
+
+.app_form_search:hover {
+    background-color: plum;
+    box-shadow: 2px 5px 20px rgb(207, 207, 205);
+    color: black;
+}
+
+.recipes_container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 260px 260px 260px;
+    align-items: center;
+    align-content: center;
+    grid-column-gap: 20px;
+}

@@ -1,0 +1,12 @@
+.recipes_label {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.recipes_img {
+    padding: 5px;
+    border: 2px solid plum;
+}
