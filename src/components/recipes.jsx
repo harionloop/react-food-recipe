@@ -4,7 +4,7 @@ import "./recipes.css";
 export default function Recipes(props) {
   return (
     <>
-      <section>
+      <section className="recipe-section">
         <a target="_blank" href={props.recipes.recipe.url}>
           <img
             className="recipes_img"

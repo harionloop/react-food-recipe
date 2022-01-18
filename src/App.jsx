@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import Axios from "axios";
 import Recipes from "./components/recipes";
-import "./styles/bootstrap.css";
+
 import "./App.css";
+// import { applicationID, applicationKeys } from "./assets/keys";
 
 function App() {
   const [query, setquery] = useState("");
   const [recipes, setrecipes] = useState([]);
   // const [healthLabel, sethealthLabel] = useState("");
-
-  const app_id = "e87034ad";
-  const app_key = "b79d728c92567d520caa124aadcfe238";
+  // UNCOMMENT IT WHEN YOU FIND A WAY TO USE FILTERS
+  const app_id = "PASTE YOUR APP ID HERE";
+  const app_key = "PASTE YOUR APP KEY HERE";
   let url = `https://api.edamam.com/search?q=${query}&app_id=${app_id}&app_key=${app_key}`;
 
   async function getRecipes() {
@@ -37,7 +38,11 @@ function App() {
         />
         <input className="app_form_search" type="submit" value="Search" />
 
-        {/* <select className="app_dropdown">
+        {/* 
+        !!!!!!!!!!!!THIS CODE WAS FOR ADDING FILTER WHILE IT WORKED WELL BEFORE BUT NOW ITS SHITTING!!!!!!!!!
+        !!!!!!!!!!add this at the end of api link: &health=${healthLabel}  when you find a way!!!!!!!!!!!!!!!!!
+        
+        <select className="app_dropdown">
           <option onClick={() => sethealthLabel("vegan")}>Vegan</option>
           <option onClick={() => sethealthLabel("No oil added")}>
             No oil added
