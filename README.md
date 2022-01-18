@@ -14,3 +14,9 @@
 # Screen Shots:
 #### Initial:
 ![Intial](/public/appss0.png)
+
+#### Final Web
+![Intial](/public/appss1.png)
+
+#### Final Mobile
+![Intial](/public/appssmob.png)
